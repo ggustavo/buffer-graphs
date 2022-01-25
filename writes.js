@@ -1,3 +1,32 @@
+function GetURLParameter(sParam) {
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) {
+            return sParameterName[1];
+        }
+    }
+}   
+
+var workload_name = GetURLParameter('workload');
+document.getElementById("name").innerHTML = "Workload: " + workload_name;
+
+var js = document.createElement("script");
+
+js.type = "text/javascript";
+js.src = "workloads/" + workload_name + ".js";
+
+js.onload = function() {
+    console.log("loaded");
+    start_graph()
+};
+
+document.body.appendChild(js);
+
+
+function start_graph(){
+
 function dynamic(){
     let max = null
     let min = null
@@ -386,3 +415,6 @@ function createtooltip() {
 main();
 d3.selectAll(".linha").attr('opacity', 0.1)
 d3.selectAll(".circulo").attr('opacity', 0.1)
+
+
+}

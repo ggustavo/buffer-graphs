@@ -16,43 +16,6 @@
 
 </body>
 
-
-
-<script>
-    function GetURLParameter(sParam) {
-        var sPageURL = window.location.search.substring(1);
-        var sURLVariables = sPageURL.split('&');
-        for (var i = 0; i < sURLVariables.length; i++) {
-            var sParameterName = sURLVariables[i].split('=');
-            if (sParameterName[0] == sParam) {
-                return sParameterName[1];
-            }
-        }
-    }   
-
-    var workload_name = GetURLParameter('workload');
-    document.getElementById("name").innerHTML = "Workload: " + workload_name;
-
-    var js = document.createElement("script");
-
-    js.type = "text/javascript";
-    js.src = "workloads/" + workload_name + ".js";
-
-    /*
-    js.onload = function() {
-    //Code using this script here
-    };
-    */
-
-    document.body.appendChild(js);
-    
-    setTimeout(function() { 
-       console.log(test);
-    }, 5000);
-    
-
-</script>
-
 <script src="https://d3js.org/d3.v4.js"></script>
 <script src="hits.js"></script>
 
