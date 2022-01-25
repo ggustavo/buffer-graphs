@@ -1,0 +1,31 @@
+body {
+    margin: 10px;
+    
+}
+
+.content {
+    grid-area: content;
+}
+
+.wrapper {
+    background-color: #fff;
+    color: #444;
+}
+
+.workload {
+    display: flex;
+    flex-grow: 1;
+    justify-content: right;
+    max-width: 360px;
+    border: rgb(149, 148, 148) solid 1px;
+    padding: 10px;
+    height: 25px;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.w_button {
+    align-self: right;
+    margin-left: 10px;
+}

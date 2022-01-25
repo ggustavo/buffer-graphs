@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<html>
+
+<head>
+    <title>Buffer Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div id="MSNFS" class=workload>
+        <h4>MSNFS</h4>
+        <button class="w_button" onclick="hit(event)">hits</button>
+        <button class="w_button" onclick="writes(event)">writes</button>
+    </div>
+
+    <div id="TPCC-Trace-3M" class=workload>
+        <h4>TPCC-Trace-3M</h4>
+        <button class="w_button" onclick="hit(event)">hits</button>
+        <button class="w_button" onclick="writes(event)">writes</button>
+    </div>
+
+    <div id="TPCE-Trace-3M" class=workload>
+        <h4>TPCE-Trace-3M</h4>
+        <button class="w_button" onclick="hit(event)">hits</button>
+        <button class="w_button" onclick="writes(event)">writes</button>
+    </div>
+
+    <div id="zipf-15m-a1-n1m-20w-burst-rwm" class=workload>
+        <h4>zipf-15m-a1-n1m-20w-burst-rwm</h4>
+        <button class="w_button" onclick="hit(event)">hits</button>
+        <button class="w_button" onclick="writes(event)">writes</button>
+    </div>
+
+    <div id="zipf-15m-a1-n1m-20w-no-burst" class=workload>
+        <h4>zipf-15m-a1-n1m-20w-no-burst</h4>
+        <button class="w_button" onclick="hit(event)">hits</button>
+        <button class="w_button" onclick="writes(event)">writes</button>
+    </div>
+
+    <div id="zipf-15m-a1-n1m-80w-burst-rwm" class=workload>
+        <h4>zipf-15m-a1-n1m-80w-burst-rwm</h4>
+        <button class="w_button" onclick="hit(event)">hits</button>
+        <button class="w_button" onclick="writes(event)">writes</button>
+    </div>
+
+    <div id="zipf-15m-a1-n1m-80w-no-burst" class=workload>
+        <h4>zipf-15m-a1-n1m-80w-no-burst</h4>
+        <button class="w_button" onclick="hit(event)">hits</button>
+        <button class="w_button" onclick="writes(event)">writes</button>
+    </div>
+
+</body>
+
+
+<script>
+
+    
+    function writes(event) {
+        let workload = event.target.parentElement.id;
+        console.log("Opening " + workload );
+        window.open("writes.html?workload="+workload, '_blank').focus();
+    }
+
+    function hit(event) {
+        let workload = event.target.parentElement.id;
+        console.log("Opening " + workload );
+        window.open("hits.html?workload="+workload, '_blank').focus();
+    }
+
+</script>
+
+
+</html>
