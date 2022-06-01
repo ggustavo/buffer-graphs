@@ -21,7 +21,7 @@ var test = [
 {"name_p":"LRUK","buffer_size":1000,"hits":748906,"writes":600283,"time":10.071348},
 {"name_p":"LRUMIS","buffer_size":1000,"hits":722762,"writes":623198,"time":4.073814},
 {"name_p":"LRUWSR","buffer_size":1000,"hits":608173,"writes":720514,"time":4.369699},
-{"name_p":"ML1","buffer_size":1000,"hits":743992,"writes":607963,"time":16.411239},
+
 {"name_p":"MRU","buffer_size":1000,"hits":17328,"writes":1187702,"time":6.486996},
 {"name_p":"SCMBP","buffer_size":1000,"hits":698300,"writes":640895,"time":22.381608},
 {"name_p":"ADLRU","buffer_size":2000,"hits":773605,"writes":579383,"time":19.102693},
@@ -46,7 +46,7 @@ var test = [
 {"name_p":"LRUK","buffer_size":2000,"hits":816492,"writes":545355,"time":19.550027},
 {"name_p":"LRUMIS","buffer_size":2000,"hits":794037,"writes":565894,"time":5.736880},
 {"name_p":"LRUWSR","buffer_size":2000,"hits":689203,"writes":655772,"time":6.430268},
-{"name_p":"ML1","buffer_size":2000,"hits":814982,"writes":550358,"time":26.859735},
+
 {"name_p":"MRU","buffer_size":2000,"hits":22984,"writes":1183040,"time":10.066313},
 {"name_p":"SCMBP","buffer_size":2000,"hits":770459,"writes":582608,"time":53.777740},
 {"name_p":"ADLRU","buffer_size":4000,"hits":845299,"writes":520231,"time":51.183165},
@@ -71,7 +71,7 @@ var test = [
 {"name_p":"LRUK","buffer_size":4000,"hits":884604,"writes":489398,"time":42.119100},
 {"name_p":"LRUMIS","buffer_size":4000,"hits":865193,"writes":508260,"time":9.813167},
 {"name_p":"LRUWSR","buffer_size":4000,"hits":770711,"writes":590241,"time":10.257480},
-{"name_p":"ML1","buffer_size":4000,"hits":885034,"writes":492834,"time":44.193050},
+
 {"name_p":"MRU","buffer_size":4000,"hits":33715,"writes":1174152,"time":17.492653},
 {"name_p":"SCMBP","buffer_size":4000,"hits":841533,"writes":524675,"time":113.445389},
 {"name_p":"ADLRU","buffer_size":8000,"hits":916575,"writes":459539,"time":110.194991},
@@ -96,7 +96,7 @@ var test = [
 {"name_p":"LRUK","buffer_size":8000,"hits":949138,"writes":434582,"time":84.480716},
 {"name_p":"LRUMIS","buffer_size":8000,"hits":934304,"writes":451083,"time":15.688258},
 {"name_p":"LRUWSR","buffer_size":8000,"hits":852537,"writes":522791,"time":17.823527},
-{"name_p":"ML1","buffer_size":8000,"hits":952708,"writes":435696,"time":82.593694},
+
 {"name_p":"MRU","buffer_size":8000,"hits":55472,"writes":1155852,"time":32.275791},
 {"name_p":"SCMBP","buffer_size":8000,"hits":911579,"writes":466664,"time":261.214655},
 {"name_p":"ADLRU","buffer_size":16000,"hits":987105,"writes":395523,"time":232.559259},
@@ -121,7 +121,7 @@ var test = [
 {"name_p":"LRUK","buffer_size":16000,"hits":1011024,"writes":379215,"time":239.574174},
 {"name_p":"LRUMIS","buffer_size":16000,"hits":1002483,"writes":392312,"time":27.073632},
 {"name_p":"LRUWSR","buffer_size":16000,"hits":935401,"writes":450074,"time":30.322531},
-{"name_p":"ML1","buffer_size":16000,"hits":1018621,"writes":376419,"time":196.720585},
+
 {"name_p":"MRU","buffer_size":16000,"hits":99517,"writes":1118358,"time":60.224571},
 {"name_p":"SCMBP","buffer_size":16000,"hits":982560,"writes":405052,"time":1006.534772},
 {"name_p":"ADLRU","buffer_size":32000,"hits":1055497,"writes":325511,"time":1425.724192},
@@ -146,7 +146,7 @@ var test = [
 {"name_p":"LRUK","buffer_size":32000,"hits":1070105,"writes":321956,"time":1039.701672},
 {"name_p":"LRUMIS","buffer_size":32000,"hits":1066948,"writes":326606,"time":47.794465},
 {"name_p":"LRUWSR","buffer_size":32000,"hits":1017837,"writes":368873,"time":52.269639},
-{"name_p":"ML1","buffer_size":32000,"hits":1079619,"writes":314613,"time":761.940407},
+
 {"name_p":"MRU","buffer_size":32000,"hits":185264,"writes":1043539,"time":105.360573},
 {"name_p":"SCMBP","buffer_size":32000,"hits":1050815,"writes":333976,"time":2135.866628},
 
@@ -163,5 +163,16 @@ var test = [
 {"name_p":"MQ","buffer_size":8000,"hits":849813,"writes":531282,"time":15.043364},
 {"name_p":"MQ","buffer_size":16000,"hits":932233,"writes":458506,"time":25.359991},
 {"name_p":"MQ","buffer_size":32000,"hits":1015136,"writes":377822,"time":42.600458},
+
+
+
+
+{"name_p":"EBRES","buffer_size":1000,"hits":703675,"writes":640531,"time":12.244486},
+{"name_p":"EBRES","buffer_size":2000,"hits":782385,"writes":577249,"time":14.319473},
+{"name_p":"EBRES","buffer_size":4000,"hits":860563,"writes":512550,"time":18.652377},
+{"name_p":"EBRES","buffer_size":8000,"hits":934813,"writes":450347,"time":25.678490},
+{"name_p":"EBRES","buffer_size":16000,"hits":1007453,"writes":385626,"time":38.008977},
+{"name_p":"EBRES","buffer_size":32000,"hits":1073920,"writes":321221,"time":62.143345},
+
 
 ]
