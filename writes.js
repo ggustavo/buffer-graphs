@@ -10,7 +10,7 @@ function GetURLParameter(sParam) {
 }   
 
 var workload_name = GetURLParameter('workload');
-document.getElementById("name").innerHTML = "Workload: " + workload_name;
+document.getElementById("name").innerHTML = "Workload: " + workload_name + " --> Click on the legend circle to highlight";
 
 var js = document.createElement("script");
 
